@@ -1,16 +1,11 @@
 package com.traveller.demo1.entity;
 
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-/**
- * 本专业必修矩阵
- */
 public class RequiredCoursesupportmatrix {
 
 	/**
@@ -22,6 +17,11 @@ public class RequiredCoursesupportmatrix {
 	 * 学院
 	 */
 	private String academy;
+
+	/**
+	 * 专业名称
+	 */
+	private String subjectName;
 
 	/**
 	 * 课程选择
