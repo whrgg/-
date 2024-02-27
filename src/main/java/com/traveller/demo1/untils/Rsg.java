@@ -1,5 +1,8 @@
 package com.traveller.demo1.untils;
 
+import lombok.Data;
+
+@Data
 public class Rsg {
     private int code;
     private String msg;
