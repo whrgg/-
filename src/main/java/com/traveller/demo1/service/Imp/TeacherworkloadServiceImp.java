@@ -8,7 +8,4 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class TeacherworkloadServiceImp extends ServiceImpl<TeacherworkloadMapper, Teacherworkload> implements TeacherworkloadService {
-
-
-
 }

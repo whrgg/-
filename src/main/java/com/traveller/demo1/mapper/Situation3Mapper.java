@@ -1,9 +1,9 @@
 package com.traveller.demo1.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.traveller.demo1.entity.Teacherworkload;
+import com.traveller.demo1.entity.Situation3;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
-public interface TeacherworkloadMapper extends BaseMapper<Teacherworkload> {
+public interface Situation3Mapper extends BaseMapper<Situation3> {
 }

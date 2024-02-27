@@ -2,31 +2,31 @@ package com.traveller.demo1.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.traveller.demo1.entity.Teacherworkload;
-import com.traveller.demo1.service.TeacherworkloadService;
+import com.traveller.demo1.entity.Pastthreeptimetea;
+import com.traveller.demo1.service.PastthreeptimeteaService;
 import com.traveller.demo1.untils.Rsg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/Teacherworkload")
-public class TeacherworkloadController {
+@RequestMapping("/Pastthreeptimetea")
+public class PastthreeptimeteaController {
 
     @Autowired
-    TeacherworkloadService service;
+    PastthreeptimeteaService service;
 
     @GetMapping("/get")
     public Rsg get(int currentpage, int pagesize) {
-        Page<Teacherworkload> page = new Page<>(currentpage, pagesize);
+        Page<Pastthreeptimetea> page = new Page<>(currentpage, pagesize);
         LambdaQueryWrapper queryWrapper = new LambdaQueryWrapper();
         service.page(page);
         return new Rsg(200, "查询成功", page.getRecords());
     }
 
     @PostMapping
-    public Rsg save(@RequestBody Teacherworkload teacherworkload) {
-        service.save(teacherworkload);
+    public Rsg save(@RequestBody Pastthreeptimetea pastthreeptimetea) {
+        service.save(pastthreeptimetea);
         return new Rsg(200, "保存成功");
     }
 
@@ -37,8 +37,8 @@ public class TeacherworkloadController {
     }
 
     @PutMapping
-    public Rsg update(@RequestBody Teacherworkload teacherworkload) {
-        service.updateById(teacherworkload);
+    public Rsg update(@RequestBody Pastthreeptimetea pastthreeptimetea) {
+        service.updateById(pastthreeptimetea);
         return new Rsg(200, "更新成功");
     }
 }
