@@ -8,8 +8,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+
 /**
- *实践教学条件
+ * 实习教学条件
  */
 public class ShixiBasicinformation {
 
@@ -44,19 +45,14 @@ public class ShixiBasicinformation {
 	private String shixiPlace;
 
 	/**
-	 * 三年中最早一年的接受学生数
+	 * 学生数量
 	 */
-	private Integer firstStudent;
+	private Integer studentNum;
 
 	/**
-	 * 进三年中中间一年的招生数
+	 * 实践
 	 */
-	private Integer secondStudent;
-
-	/**
-	 * 近三年最晚的招生数
-	 */
-	private Integer thridStudent;
+	private java.util.Date year;
 
 
 }

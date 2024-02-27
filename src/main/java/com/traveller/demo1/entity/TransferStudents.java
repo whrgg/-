@@ -18,7 +18,7 @@ public class TransferStudents {
 	/**
 	 * 学号
 	 */
-	private Integer studentId;
+	Integer studentId;
 
 	/**
 	 * 当前学院

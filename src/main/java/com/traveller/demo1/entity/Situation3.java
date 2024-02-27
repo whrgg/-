@@ -1,11 +1,16 @@
 package com.traveller.demo1.entity;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+/**
+ * 人文社科类课程学分设置以及达标情况
+ */
 public class Situation3 {
 
 	/**

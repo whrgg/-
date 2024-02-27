@@ -1,11 +1,18 @@
 package com.traveller.demo1.entity;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+
+/**
+ *本专业必修课程对毕业要求的支撑矩阵
+ */
+
 public class RequiredCoursesupportmatrix {
 
 	/**

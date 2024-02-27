@@ -5,13 +5,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- 最近三年学生数
- **/
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+
+/**
+ *
+ *最近三年学生数
+ */
 public class RecruitStudents {
 
 	/**
@@ -37,7 +38,7 @@ public class RecruitStudents {
 	/**
 	 * 年份
 	 */
-	private String year;
+	private java.util.Date year;
 
 	/**
 	 * 招生人数

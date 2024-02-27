@@ -1,11 +1,16 @@
 package com.traveller.demo1.entity;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+/**
+ * 校企开展实习实训情况
+ */
 public class Train_Situation {
 
 	/**
